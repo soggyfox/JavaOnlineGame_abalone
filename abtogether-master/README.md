@@ -1,5 +1,5 @@
 #Abalone Game 
-This is the read me to our Abalone game Group Bit 1.10.
+This is the read me to our Abalone game. Abalone is a 2 player board game. https://en.wikipedia.org/wiki/Abalone_(board_game)
 We followed the model-view-controller architecture.
 
 We have built a client-server board game. 
@@ -37,19 +37,6 @@ Note that for step 4 "Add VM options" the second approach is more
 reliable in my opinion. 
 
 Note - the steps are the same for JavaFx 11 and 13. 
-
----------------------ALTERNATIVE NOT ADVISED------------------------------
- If your IDE is eclipse you can use this link below
-to aid you --
--- https://gist.github.com/stevenliebregt/bc62a382fc43064136b662ee62172ab3
-
-------------------------------------------------------------------------
-
-
-
-
-
-
 
 
 
