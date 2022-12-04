@@ -1,7 +1,11 @@
-#Abalone Game 
+# Abalone Game 
 This is the read me to our Abalone game. Abalone is a 2 player board game. https://en.wikipedia.org/wiki/Abalone_(board_game)
 We followed the model-view-controller architecture.
 
+# Overview
+This is a 2 board game which can be run on the TUI or GUI implemented in the view. The controller enforces the rules of Abalone. There is test coverage for this application of over 50%. It runs on a server socket so that you can play with someone using a different computer by connecting to the same port. The protocol for the way the networking was selected is also avalable in this project. This was a university project. 
+
+# To run 
 We have built a client-server board game. 
 To run our program first run the Server.java and then run multiple instances of Client.java which will connect clients to the server. 
 To run muliple clients select run in parrallel option in your IDE.
@@ -11,7 +15,7 @@ If you are the first client to connect to the server you can select The game mod
 Other possible requests can also be made in accordance with our groups protocol
 
 
-#Gui add-on javafx required 
+# Gui add-on javafx required 
 The gui was partly implemented. The base of the view is there and only if a 
 legal selection of marbles is made a move can occur.
 To move click the button "clear selection" and click on the marbles you wish to move 
