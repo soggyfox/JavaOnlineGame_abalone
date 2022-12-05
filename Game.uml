@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model.objects.Marble</OriginalElement>
+  <nodes>
+    <node x="-15.5" y="432.5">model.objects.Marble</node>
+    <node x="256.5" y="461.5">model.player.Player</node>
+    <node x="448.5" y="461.5">model.player.Move</node>
+    <node x="-34.0" y="-25.5">model.objects.Board</node>
+    <node x="247.5" y="22.5">controller.game.Game</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controller.game.Game" target="model.player.Player">
+      <point x="0.0" y="137.5" />
+      <point x="0.0" y="-98.5" />
+    </edge>
+    <edge source="model.player.Move" target="model.player.Player">
+      <point x="-71.5" y="-0.0" />
+      <point x="63.5" y="-0.0" />
+    </edge>
+    <edge source="model.objects.Board" target="model.objects.Marble">
+      <point x="0.0" y="185.5" />
+      <point x="0.0" y="-127.5" />
+    </edge>
+    <edge source="model.player.Player" target="model.objects.Marble">
+      <point x="-63.5" y="-0.0" />
+      <point x="95.5" y="-0.0" />
+    </edge>
+    <edge source="controller.game.Game" target="model.objects.Board">
+      <point x="-72.5" y="-0.0" />
+      <point x="114.0" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Directed Orthogonal" zoom="0.8896457765667575" x="279.0" y="331.0" />
+  <SelectedNodes>
+    <node>model.objects.Marble</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

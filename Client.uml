@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>network.client.Client</OriginalElement>
+  <nodes>
+    <node x="434.0" y="258.0">network.client.Client</node>
+    <node x="128.0" y="151.0">controller.agent.HumanAgent</node>
+    <node x="94.0" y="722.0">view.Tui</node>
+    <node x="423.0" y="0.0">controller.agent.Agent</node>
+    <node x="671.0" y="139.0">controller.agent.NaiveAgent</node>
+    <node x="0.0" y="422.0">view.UI</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="network.client.Client" target="controller.agent.HumanAgent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="view.Tui" target="view.UI">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="view.UI" target="network.client.Client">
+      <point x="0.5740098055769636" y="-4.966941991114993" />
+      <point x="0.5740098055769636" y="-4.966941991114993" />
+    </edge>
+    <edge source="controller.agent.HumanAgent" target="view.UI">
+      <point x="4.537625202909794" y="2.0999898851941907" />
+      <point x="4.537625202909794" y="2.0999898851941907" />
+    </edge>
+    <edge source="network.client.Client" target="controller.agent.NaiveAgent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="network.client.Client" target="view.Tui">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.agent.NaiveAgent" target="controller.agent.Agent">
+      <point x="0.0" y="-5.347955896510996" />
+      <point x="0.0" y="-5.347955896510996" />
+    </edge>
+    <edge source="network.client.Client" target="controller.agent.Agent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="network.client.Client" target="view.UI">
+      <point x="0.0" y="5.03327802996705" />
+      <point x="0.0" y="5.03327802996705" />
+    </edge>
+    <edge source="controller.agent.HumanAgent" target="controller.agent.Agent">
+      <point x="-2.272621305325842" y="-4.453671788825375" />
+      <point x="-2.272621305325856" y="-4.453671788825375" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="0.6452569169960475" x="334.5" y="495.99999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

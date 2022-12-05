@@ -1,0 +1,48 @@
+package network.server;
+
+import network.client.Client;
+
+import java.util.ArrayList;
+
+public class Lobby implements Runnable {
+    public volatile boolean newClientConnected;
+    public volatile boolean CeaseLobby;
+    public Client wantsToJoin ;
+
+    public final ArrayList<Lobby> wantsToPlay2;
+
+    public Lobby(ArrayList<Lobby> wantsToPlay2) {
+        this.wantsToPlay2 = wantsToPlay2;
+    }
+    //public final ArrayList<Lobby> wantsToPlay3;
+//public final ArrayList<Lobby> wantsToPlay4;
+    public Client cl;
+
+  
+
+    @Override
+    public void run() {
+        //while lobby open. ie no game
+        while(!CeaseLobby){
+            try{
+                addClient();
+            }catch(Exception e){}
+        }
+    }
+
+    private void addClient() throws InterruptedException {
+        while(newClientConnected){
+            try {
+                wantsToJoin.wait();
+            } catch (Exception e) {
+                e.printStackTrace();}
+            wantsToJoin = cl; // Connection made
+            newClientConnected = true;
+            if(wantsToPlay2.size() > 1){
+                Server server = new Server();
+                server.startGame();
+            }
+        }
+    }
+}
+
