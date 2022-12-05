@@ -1,5 +1,5 @@
 # Abalone Game 
-University Project Group of 2
+University Project, Group of 2.
 Learn more in the extensive pdf report. 
 
 # Client-server board game
