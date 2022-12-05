@@ -1,4 +1,5 @@
-#Abalone Game University Project Group of 2
+# Abalone Game 
+University Project Group of 2
 This is the read me to our Abalone game Group Bit 1.10.
 We followed the model-view-controller architecture.
 
