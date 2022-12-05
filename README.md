@@ -1,5 +1,6 @@
 # Abalone Game 
 University Project Group of 2
+Learn more in the extensive pdf report. 
 
 # Client-server board game
 We have built a client-server board game. 
