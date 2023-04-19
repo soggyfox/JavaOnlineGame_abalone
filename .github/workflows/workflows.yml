@@ -1,19 +1,13 @@
-- name: Google Java Format
+- name: prettier-java-format-action
   # You may pin to the exact commit or the version.
-  # uses: axel-op/googlejavaformat-action@fe78db8a90171b6a836449f8d0e982d5d71e5c5a
-  uses: axel-op/googlejavaformat-action@v3.6.0
+  # uses: tsar-boomba/prettier-java-action@fc8ee7e20dfc40c7c84c21233b66d5d4eab63aa8
+  uses: tsar-boomba/prettier-java-action@v1.0.0
   with:
-    # Arguments for the Google Java Format executable
-    args: # optional, default is --replace
-    # Pattern to match the files to be formatted
+    # Arguments for Prettier cli.
+    prettier-args: # optional, default is -w
+    # Pattern to match the files to be formatted.
     files: # optional, default is **/*.java
-    # Pattern to match the files to be ignored by this action
-    files-excluded: # optional
-    # Set to true to not commit the changes
-    skipCommit: # optional, default is false
-    # Version of Google Java Format to use
-    version: # optional
-    # Recommended on MacOS machines
-    githubToken: # optional
-    # Commit message
-    commitMessage: # optional, default is Google Java Format
+    # Message for formatter commit.
+    commit-message: # optional, default is Format Java
+    # Whether or not you want the action to push to your repo with the formatting.
+    commit: # optional, default is true
