@@ -9,7 +9,7 @@ To run muliple clients select the run in parrallel option in your IDE. Alternati
 
 Here each client can input there nickname.
 If you are the first client to connect to the server you can select The game mode you wish to play. 
-Other possible requests can also be made in accordance with our groups protocol
+Other possible requests can also be made in accordance with our groups protocol.
 
 
 
