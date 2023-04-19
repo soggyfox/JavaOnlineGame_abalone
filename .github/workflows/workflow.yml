@@ -1,24 +1,26 @@
-name: php-cs-fixer
-
-on:
-  pull_request:
-  push:
-    branches:
-      - main
-
+name: Java Format
+on: [push]
 jobs:
-  php-cs-fixer:
+  format:
     runs-on: ubuntu-latest
-
-    permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
-      contents: write
-
     steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: ${{ github.head_ref }}
-
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Apply php-cs-fixer changes
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Add google-java-format plugin to pom.xml
+        run: |
+          echo '<build><plugins><plugin><groupId>com.github.siom79</groupId><artifactId>fmt-maven-plugin</artifactId><version>2.10</version><configuration><style>google</style></configuration></plugin></plugins></build>' > temp_pom.xml
+          cat pom.xml >> temp_pom.xml
+          mv temp_pom.xml pom.xml
+      - name: Format Java code
+        run: mvn fmt:format
+      - name: Commit formatted code
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Apply google-java-format" || true
+          git push
